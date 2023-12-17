@@ -1,0 +1,42 @@
+name: heart_rate
+description: "A new Flutter project."
+publish_to: "none"
+version: 0.1.0
+
+environment:
+  sdk: ">=3.2.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  flutter_blue: ^0.8.0
+  flutter_launcher_icons: ^0.13.1
+  permission_handler: ^11.1.0
+  sleek_circular_slider: ^2.0.1
+  tflite:
+  animated_text_kit: ^4.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/model/model.tflite
+    - assets/model/labels.txt
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/app_icon.png"
+
+flutter_assets:
+  assets_path: assets/
+  output_path: lib/utils/
+  filename: app_assets.dart
+  field_prefix: null
